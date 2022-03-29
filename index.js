@@ -106,7 +106,8 @@ app.get('/getTwitterList/:id', function (req, res) {
     });
 })
 
-app.get('alive', function (req, res) { 
+app.get('/alive', function (req, res) { 
+    var params = req.params;
     res.send('ok');
 })
 
