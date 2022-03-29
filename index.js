@@ -106,6 +106,9 @@ app.get('/getTwitterList/:id', function (req, res) {
     });
 })
 
+app.get('alive', function (req, res) { 
+    res.send('ok');
+})
 
 app.listen(port, () => {
     console.log(`DAO Backend listening on http://127.0.0.1:8888`)
